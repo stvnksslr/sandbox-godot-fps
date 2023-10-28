@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://btihtrlo07gf0"]
+[gd_scene load_steps=8 format=3 uid="uid://btihtrlo07gf0"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_3evfh"]
 
@@ -9,7 +9,6 @@
 [sub_resource type="Animation" id="Animation_lu1u4"]
 resource_name = "idle"
 length = 3.0
-loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -86,9 +85,13 @@ tracks/2/keys = {
 "values": [Vector3(0.15708, 0, -0.185005)]
 }
 
+[sub_resource type="Animation" id="Animation_6liqn"]
+resource_name = "attack"
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_dn1eg"]
 _data = {
 "RESET": SubResource("Animation_c3hgv"),
+"attack": SubResource("Animation_6liqn"),
 "idle": SubResource("Animation_lu1u4")
 }
 
